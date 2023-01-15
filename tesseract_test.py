@@ -13,7 +13,7 @@ path_csv = '/Users/pavelokhotnikov/Downloads/SROIE2019/test/orc_csv/' #путь 
 config = r'--oem 3 --psm 6'
 
 for files in os.walk(path_img):
-    for file in files[2]:
+    for file in files[2]: 
         fl = path_img+file
         img = cv2.imread(fl)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
